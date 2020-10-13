@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -27,6 +29,8 @@ module.exports = {
         icon: `src/images/poweredby_nytimes_30b.png`, // This path is relative to the root of the site.
       },
     },
+
+// In any server-side code, e.g. gatsby-config.js
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
