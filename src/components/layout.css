@@ -12,6 +12,7 @@ body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: 'Domine', serif;
   font-weight: normal;
+  color: black;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -54,9 +55,16 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
-a:active,
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:active {
+  text-decoration: underline;
+}
 a:hover {
   outline-width: 0;
+  color: lightgray;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
@@ -80,7 +88,7 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: black;
   font-family: Domine, serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
