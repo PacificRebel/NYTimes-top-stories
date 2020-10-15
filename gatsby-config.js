@@ -3,7 +3,7 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `New York Times top stories`,
-    description: `Calls New York Times API for access to their top stories.`,
+    description: `New York Times top stories, called with their API.`,
     author: `@gatsbyjs`,
   },
   plugins: [

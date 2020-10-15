@@ -10,15 +10,46 @@ import { Column } from 'simple-flexbox';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Column>
 
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-        <TopStories />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+        <div class="container">
+          <section class="cards">
+
+            <article class="card">
+              <div class="header">
+                <p><h2> Top Stories </h2></p>
+                <p><TopStories /></p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="header">
+                <Link to="/page-2/">Go to page 2</Link> <br />
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="header">
+                <Link to="/page-2/">Go to page 2</Link> <br />
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="header">
+                <Link to="/page-2/">Go to page 2</Link> <br />
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="header">
+                <Link to="/page-2/">Go to page 2</Link> <br />
+              </div>
+            </article>
+
+          </section>
+        </div>
+      </Column>
+    </Layout>
 )
 
 export default IndexPage
