@@ -2,7 +2,7 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `New York Times top stories`,
+    title: `News headlines (currently only New York Times)`,
     description: `New York Times top stories, called with their API.`,
     author: `@gatsbyjs`,
   },

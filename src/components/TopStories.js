@@ -15,18 +15,19 @@ class TopStories extends Component {
   }
 
   render() {
-    const data = this.state.items
-    console.log(data)
-    let url = ''
-    let title = ''
-    if  (data.length > 0) {
-      url = data[0].url
-      title = data[0].title
-    }
-    
+    // this section would return only the first story, but as many times as there are stories in the top stories section
+    // const data = this.state.items
+    // console.log(data)
+    // let url = ''
+    // let title = ''
+    // if  (data.length > 0) {
+    //   url = data[0].url.first
+    //   title = data[0].title.first
+    // }
+
     return (
       <div className="topstories">
-      {this.state.items.map((item, index) => <p key={index}><a href={item["url"]}>{item["title"]}</a></p>)}
+      {this.state.items.map((item) => <p><a href={item["url"]}>{item["title"]}</a></p>)}
       </div>
     )
   }
